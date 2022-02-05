@@ -1,0 +1,94 @@
+body {
+    background-image: url("../images/bg-pattern-top.svg"),
+        url("../images/bg-pattern-bottom.svg");
+    background-position: right 40vw bottom 43vh, left 44vw top 42vh;
+    background-repeat: no-repeat;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.card {
+    width: calc(100% - 49px);
+    margin: 146px auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 16px -7px #000;
+}
+
+.card .background-image {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    min-height: 140px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-details {
+    text-align: center;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.card h2 {
+    font-family: "Kumbh Sans";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card p {
+    color: hsl(185, 75%, 39%);
+}
+
+.card-details p {
+    margin-bottom: 28px;
+}
+
+.card-stats h2 {
+    text-transform: uppercase;
+    margin-top: 28px;
+    margin-bottom: 11px;
+}
+
+.card-stats-wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.card-details {
+    position: relative;
+    padding-top: 77px;
+}
+
+.card-details img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+.card-details h2 {
+    margin-top: 0;
+}
+
+.card-details h2 span {
+    color: hsl(185, 75%, 39%);
+    font-weight: 400;
+}
+
+.card-stats p {
+    font-size: 13px;
+    margin-bottom: 26px;
+}
+
+@media screen and (min-width: 351px) {
+    .card {
+        max-width: 350px;
+        margin: 172px auto;
+    }
+
+    body {
+        background-position: right 51vw bottom 38vh, left 49vw top 53vh;
+    }
+}
